@@ -5,6 +5,7 @@
 <h1>{{article.title}}</h1>
         <p>{{article.text_feild}}</p>
         <p>{{article.date}}</p>
-
+        <a href="{% url 'news-delete' article.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'news-update' article.id %}" class="btn btn-info">Редактировать</a>
         </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends 'main/default.html'%}
+{% extends 'main/default.html' %}
 {% block title %}<title>Новости на сайте</title>{% endblock %}
 {% block body %}
     <div class="features">
@@ -7,7 +7,7 @@
         <div class="alert alert-warning">
             <h3>{{el.title }}</h3>
             <p>{{el.first_words }}</p>
-            <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Продоожение в статье</a>
+            <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Продожение в статье</a>
             <p>{{el.date }}</p>
         </div>
         {%endfor%}
